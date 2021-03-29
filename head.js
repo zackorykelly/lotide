@@ -9,8 +9,11 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-//Test
+const head = function(input) {
+  return (input[0]);
+};
 
-assertEqual('Lighthouse Labs', 'Bootcamp');
-assertEqual(1, 1);
-assertEqual(1.1, 1);
+assertEqual(head([1, 2, 3]), 1);
+assertEqual(head([]), undefined);
+assertEqual(head(['hello', 'goodbye']), 'hello');
+assertEqual(head([5]), 5);
