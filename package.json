@@ -1,0 +1,26 @@
+{
+  "name": "lotide",
+  "version": "1.0.0",
+  "description": "Lotide project for LHL inspired by Lodash",
+  "main": "assertArraysEqual.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zackorykelly/lotide.git"
+  },
+  "author": "Zack Kelly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zackorykelly/lotide/issues"
+  },
+  "homepage": "https://github.com/zackorykelly/lotide#readme",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^8.3.2"
+  }
+}
