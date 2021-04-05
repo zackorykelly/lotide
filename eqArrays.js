@@ -1,3 +1,5 @@
+const assert = require('assert');
+
 const mad = String.fromCodePoint(0x1f621);
 const smile = String.fromCodePoint(0x1f600);
 
