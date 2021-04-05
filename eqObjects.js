@@ -46,24 +46,24 @@ const eqObjects = function(object1, object2) {
   }
 };
 
-// const a = { a: 1, b: 1 };
-// const b = { b: 1, a: 1 };
-// const c = { cow: 5, potato: 6 };
-// const d = { potato: 6 };
+const a = { a: 1, b: 1 };
+const b = { b: 1, a: 1 };
+const c = { cow: 5, potato: 6 };
+const d = { potato: 6 };
 
-// assertEqual(eqObjects(a, b), true);
-// assertEqual(eqObjects(b, a), true);
-// assertEqual(eqObjects(a, c), false);
-// assertEqual(eqObjects(c, d), false);
+assertEqual(eqObjects(a, b), true);
+assertEqual(eqObjects(b, a), true);
+assertEqual(eqObjects(a, c), false);
+assertEqual(eqObjects(c, d), false);
 
-// const cd = { c: "1", d: ["2", 3] };
-// const dc = { d: ["2", 3], c: "1" };
-// assertEqual(eqObjects(cd, dc), true); // => true
+const cd = { c: "1", d: ["2", 3] };
+const dc = { d: ["2", 3], c: "1" };
+assertEqual(eqObjects(cd, dc), true); // => true
 
-// const cd2 = { c: "1", d: ["2", 3, 4] };
-// assertEqual(eqObjects(cd, cd2), false); // => false
+const cd2 = { c: "1", d: ["2", 3, 4] };
+assertEqual(eqObjects(cd, cd2), false); // => false
 
-console.log(eqObjects({ a: { z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 })) // => true
+console.log(eqObjects({ a: { z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 })); // => true
 
-console.log(eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 })) // => false
-console.log(eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: 1, b: 2 })) // => false
+console.log(eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 })); // => false
+console.log(eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: 1, b: 2 })); // => false
