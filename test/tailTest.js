@@ -1,23 +1,20 @@
-
-const assertEqual = require('../assertEqual');
 const tail = require('../tail');
+const assert = require('chai').assert;
 
-assertEqual(String(tail([1, 2, 3, 4, 5])), '2,3,4,5');
-assertEqual(String(tail(['hello'])), '');
-assertEqual(String(tail(['hello', 'goodbye'])), 'goodbye');
-assertEqual(String(tail([])), '');
+describe("#middle", () => {
+  it("[1,2,3,4,5] should return [2,3,4,5] (happy path)", () => {
+    assert.deepEqual();
+  });
 
-const result = tail(["Hello", "Lighthouse", "Labs"]);
-assertEqual(result.length, 2); // ensure we get back two elements
-assertEqual(result[0], "Lighthouse"); // ensure first element is "Lighthouse"
-assertEqual(result[1], "Labs"); // ensure second element is "Labs"
+  it("['hello'] should return [] (single item)", () => {
+    assert.deepEqual();
+  });
 
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words); // no need to capture the return value since we are not checking it
-assertEqual(words.length, 3); // original array should still have 3 elements!
+  it("['hello', 'goodbye'] should return ['goodbye'] (two string items)", () => {
+    assert.deepEqual();
+  });
 
-const result2 = tail([1]);
-console.log(result2);
-
-const result3 = tail([]);
-console.log(result3);
+  it("[] should return [] (empty array case)", () => {
+    assert.deepEqual();
+  });
+});
