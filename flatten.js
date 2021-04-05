@@ -14,8 +14,3 @@ const flatten = function(originalArray) {
 };
 
 module.exports = flatten;
-
-// assertArraysEqual(flatten([1, 2, 3]), [1, 2, 3]);
-// assertArraysEqual(flatten([1, [2], 3]), [1, 2, 3]);
-// assertArraysEqual(flatten([1, [2, 3]]), [1, 2, 3]);
-// assertArraysEqual(flatten([1, [2], [3]]), [1, 2, 3]);
